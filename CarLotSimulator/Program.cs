@@ -35,6 +35,9 @@ namespace CarLotSimulator
             Car3.HonkNoise = "Beep, Beep, Ding";
             Car3.IsDriveable = "flase";
 
+            //Set the properties for each of the cars
+            //Call each of the methods for each car
+
             Console.WriteLine("----------");
 
             Car1.MakeEngineNoise();
@@ -51,12 +54,12 @@ namespace CarLotSimulator
             Car3.MakeHonkNoise();
 
 
-            //Set the properties for each of the cars
-            //Call each of the methods for each car
 
             //*************BONUS*************//
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
+
+
 
             //*************BONUS X 2*************//
 
