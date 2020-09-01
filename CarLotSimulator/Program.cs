@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CarLotSimulator
 {
@@ -8,13 +9,48 @@ namespace CarLotSimulator
         {
             //TODO
 
-            //Create a seperate class file called Car - DONE 
-            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-            //The methods should take one string parameter: the respective noise property            
-
-
             //Now that the Car class is created we can instanciate 3 new cars
+
+            var Car1 = new Car();
+            Car1.Year = 2017;
+            Car1.Make = "Honda";
+            Car1.Model = "Civic";
+            Car1.EngineNoise = "RRRHUMMMM";
+            Car1.HonkNoise = "Beep, Bong";
+            Car1.IsDriveable = "true";
+
+            var Car2 = new Car();
+            Car2.Year = 2015;
+            Car2.Make = "Dogde";
+            Car2.Model = "Ram";
+            Car2.EngineNoise = "GGGRRRRRUUUU";
+            Car2.HonkNoise = "Honk, Honnnnnk";
+            Car2.IsDriveable = "true";
+
+            var Car3 = new Car();
+            Car3.Year = 2015;
+            Car3.Make = "Ford";
+            Car3.Model = "Fusion";
+            Car3.EngineNoise = "Hmmmmm";
+            Car3.HonkNoise = "Beep, Beep, Ding";
+            Car3.IsDriveable = "flase";
+
+            Console.WriteLine("----------");
+
+            Car1.MakeEngineNoise();
+            Car1.MakeHonkNoise();
+
+            Console.WriteLine("----------");
+
+            Car2.MakeEngineNoise();
+            Car2.MakeHonkNoise();
+
+            Console.WriteLine("----------");
+
+            Car3.MakeEngineNoise();
+            Car3.MakeHonkNoise();
+
+
             //Set the properties for each of the cars
             //Call each of the methods for each car
 
