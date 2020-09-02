@@ -11,6 +11,7 @@ namespace CarLotSimulator
 
             //Now that the Car class is created we can instanciate 3 new cars
 
+            //Standard member initialization ---------- one type
             var Car1 = new Car();
             Car1.Year = 2017;
             Car1.Make = "Honda";
@@ -59,6 +60,31 @@ namespace CarLotSimulator
 
             // Set the properties utilizing the 3 different ways we learned about, one way for each car
 
+
+            //Object initializer syntax --------- two type
+
+            Car celica = new Car() {
+                Year = 2000,
+                Make = "Toyota",
+                Model = "Celica",
+                EngineNoise = "Nothing",
+                HonkNoise = "Help" };
+
+            Console.WriteLine("----------");
+            celica.MakeEngineNoise();
+            celica.MakeHonkNoise();
+
+            //Constructor initialization -------------third type
+
+            Car someOtherCar = new Car(
+                3000, "Mars Inc.",
+                "Alpha ++", "Space Noises",
+                "Does a space ship Honk?",
+                "true");
+
+            Console.WriteLine("----------");
+            someOtherCar.MakeEngineNoise();
+            someOtherCar.MakeHonkNoise();
 
 
             //*************BONUS X 2*************//
