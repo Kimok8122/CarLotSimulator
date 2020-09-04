@@ -3,7 +3,8 @@ namespace CarLotSimulator
 {
     public class Car
     {
-   
+
+
             //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
 
         public double Year { set; get; }
@@ -30,7 +31,7 @@ namespace CarLotSimulator
 
         public Car()
         {
-
+            CarLot.nubmerOfCars++;
         }
 
         public Car(
